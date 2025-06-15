@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+#title_not_found_page::after {
+  clip-path: ellipse(45% 3% at 48% 51%);
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height:18rem;
+  background: #999; 
+}
+
+@media only screen and (min-width: 48rem){
+    #title_not_found_page::after {
+        height:26rem;
+        clip-path: ellipse(47.19% 3% at 49.17% 49.56%);
+    }
+}
