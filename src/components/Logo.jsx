@@ -1,6 +1,11 @@
+import { Link } from "react-router"
+import { ROUTES } from "../config/routes"
+
 export function Logo() {
-    return <div className="flex items-center gap-1">
-        <img src="/public/pokeball.png" alt="" className="w-5 h-auto"/>
-        <img src="/public/pokedex.png" alt="Logo du site Pokédex" className="w-25 h-auto" />
-    </div>
+    return <Link to={ROUTES.HOME} aria-label="Back to the homepage">
+        <div className="flex items-center gap-1">
+            <img src="/pokeball.png" alt="" className="w-5 h-auto"/>
+            <img src="/pokedex.png" alt="Pokédex website logo" className="w-25 h-auto" />
+        </div>
+    </Link>
 }

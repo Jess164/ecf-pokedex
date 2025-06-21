@@ -8,13 +8,13 @@ export function NotFoundPage() {
 
         <div id="title_not_found_page" className="flex justify-center relative">
             <span className="text-9xl md:text-[12rem] font-semibold">4</span>
-            <img src="/public/opened_pokeball.png" alt="0" className="w-40 h-auto md:w-52" />
+            <img src="/opened_pokeball.png" alt="0" className="w-40 h-auto md:w-52" />
             <span className="text-9xl md:text-[12rem] font-semibold">4</span>
         </div>
 
         <div className="mt-12 md:mt-15 flex flex-col items-center gap-6">
             <p className="font-semibold text-lg md:text-3xl tracking-widest">Page not found</p>
-            <Link to={ROUTES.HOME} className="font-semibold text-xl md:text-2xl uppercase flex items-center gap-2 hover:underline hover:decoration-2 hover:underline-offset-5"> <House /> Back Home</Link>
+            <Link to={ROUTES.HOME} aria-label="Back to the homepage" className="font-semibold text-xl md:text-2xl uppercase flex items-center gap-2 hover:underline hover:decoration-2 hover:underline-offset-5"> <House /> Back Home</Link>
         </div>
     </div>
 }
