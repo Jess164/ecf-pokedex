@@ -1,11 +1,13 @@
-import { FilterInput } from "../components/FilterInput"
-import { CardList } from "../components/CardsList"
+import { FilterItems } from "../components/filter/FilterItems"
+import { CardList } from "../components/cards/CardsList"
 import { useState } from "react"
 import { useEffect } from "react"
 import { getPokemons } from "../api/getPokemons"
 
 export function HomePage() {
     const [pokemons, setPokemons] = useState([])
+    const [nameFilter, setNameFilter] = useState('')
+    const [typeFilter, setTypeFilter] = useState('')
     console.log(pokemons);
 
     useEffect(() => {
@@ -15,13 +17,21 @@ export function HomePage() {
     async function loadPokemons(){
         const pokemonsDatas = await getPokemons()
         setPokemons(pokemonsDatas)
-    }
+    }   
+
+    const filteredPokemons = pokemons.filter((pokemon) => {
+       return pokemon.name.toLowerCase().includes(nameFilter.toLowerCase()) 
+        && pokemon.types.find((type) => { return type.toLowerCase().includes(typeFilter.toLowerCase())})
+    })
 
     return <div>
         <div className="w-[90%] mx-auto mt-10 mb-4">
-            <FilterInput/>
+            <FilterItems onChangeInputValue={setNameFilter} onSelectOption={setTypeFilter} />
         </div>
 
-        <CardList pokemonsList={pokemons} />
+        <div className="md:w-[80%] mx-auto">
+            <CardList pokemonsList={filteredPokemons} />
+            <p className={`text-center ${filteredPokemons.length === 0 ? 'visible' : 'hidden'}`}>Aucun résultat pour la recherche <em>« {nameFilter} »</em></p>
+        </div>
     </div>
 }
