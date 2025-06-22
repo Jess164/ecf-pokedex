@@ -1,4 +1,4 @@
-import { TypeNameTag } from "./TypeNameTag";
+import { TypeNameTag } from "./TypeNameTag"
 
 export function Card(props) {
 

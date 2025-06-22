@@ -1,4 +1,4 @@
-import { PKMN_TYPES } from "../utils/pokemonTypes"
+import { PKMN_TYPES } from "../../utils/pokemonTypes"
 
 export function TypeNameTag(props) {
     function changeColor(typeNamePokemon){
