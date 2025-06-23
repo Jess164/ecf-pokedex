@@ -2,7 +2,7 @@ import { FilterItems } from "../components/filter/FilterItems"
 import { CardList } from "../components/cards/CardsList"
 import { useState } from "react"
 import { useEffect } from "react"
-import { getPokemons } from "../api/getPokemons"
+import { getPokemons } from "../api/pokemons/getPokemons"
 
 export function HomePage() {
     const [pokemons, setPokemons] = useState([])
