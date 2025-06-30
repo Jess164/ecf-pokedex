@@ -25,7 +25,7 @@ export function UnderHeaderArrow(props) {
                 <ArrowBigLeft size={30} color='black' />
             </div>
         ) : (
-            <Link to={ROUTES.DETAILED_PAGE.replace(":id", prevId)} onClick={prevId!=0 ? () => loadInfoPokemon(prevId) : ''}
+            <Link to={ROUTES.DETAILED_PAGE.replace(":id", prevId)} onClick={prevId!=0 ? () => {loadInfoPokemon(prevId)} : ''}
             className="cursor-pointer hover:scale-110 transition duration-300 ease-in-out">
                 <ArrowBigLeft size={30} color='black' className="hover:fill-black" />
             </Link>
@@ -36,7 +36,7 @@ export function UnderHeaderArrow(props) {
                 <ArrowBigRight size={30} color='black' />
             </div>
         ) : (
-            <Link to={ROUTES.DETAILED_PAGE.replace(":id", nextId)} onClick={() => loadInfoPokemon(nextId) } className="cursor-pointer hover:scale-110 transition duration-300 ease-in-out">
+            <Link to={ROUTES.DETAILED_PAGE.replace(":id", nextId)} onClick={() => {loadInfoPokemon(nextId)} } className="cursor-pointer hover:scale-110 transition duration-300 ease-in-out">
                 <ArrowBigRight size={30} color='black' className="hover:fill-black" />
             </Link>
         )}  

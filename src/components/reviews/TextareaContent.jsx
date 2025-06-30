@@ -13,13 +13,13 @@ export function TextareaContent(props) {
     const formRef = useRef()
     const { id } = useParams()
 
-    const handleSubmit = async (event) => {
+    async function handleSubmit(event) {
         event.preventDefault()
 
         const formData = new FormData(event.target)   
         const values = Object.fromEntries(formData)
         
-        // //Validate
+        //Validate
         const newErrors = {}    
         if(!values.textarea_review) newErrors.textarea_review = "Required"
         else if(values.textarea_review.length > 100) newErrors.textarea_review = "Maximum 100 characters"
@@ -38,22 +38,18 @@ export function TextareaContent(props) {
         }, 300)
     }
 
-    const handleKeyDown = (event) => {
+    function handleKeyDown(event) {
         if (event.key === 'Enter') {
             event.preventDefault()
             formRef.current.requestSubmit()
         }
     }
 
-//     function changeFocusOne() {
-//       formRef.current.focus()
-//   }
-
     return <div>
         <form ref={formRef} onSubmit={handleSubmit} className='mb-4'>
             <div className='relative w-full'>
                 <label htmlFor="textarea_review" className="sr-only">Add Review</label>
-                <textarea onKeyDown={(event) => handleKeyDown(event)} type="search" name="textarea_review" id="textarea_review" placeholder="Add a review..." maxLength={100} className="w-full pl-3 pr-4 rounded-2xl focus:outline-1 focus:outline-[#faa946] border border-[#FEC277]" />             
+                <textarea onKeyDown={(event) => {handleKeyDown(event)}} type="search" name="textarea_review" id="textarea_review" placeholder="Add a review..." maxLength={100} className="w-full pl-3 pr-4 rounded-2xl focus:outline-1 focus:outline-[#faa946] border border-[#FEC277]" />             
                 <button type="submit" className='absolute bottom-2 right-2 bg-[#FEC277] rounded-full cursor-pointer hover:scale-110 transition duration-300 ease-in-out'>
                     <Plus size={20} color='#FFFFFF' />
                 </button>
