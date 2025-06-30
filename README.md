@@ -1,12 +1,32 @@
-# React + Vite
+# ECF FRONT - POKEDEX
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+L'application affiche une liste de pokémons et permet de consulter des informations détaillées sur ces pokémons. Elle affiche leurs statistiques, types, images, et permet de les rechercher ou de les filtrer.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Prérequis
 
-## Expanding the ESLint configuration
+Avant de commencer, s'assurer d'avoir :
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- [Node.js](https://nodejs.org/) (version 20 ou supérieure recommandée)
+- [npm](https://www.npmjs.com/) ou [pnpm](https://pnpm.io/)
+
+---
+
+## Installation
+
+Cloner le dépôt :
+
+```bash
+git clone https://github.com/ton-nom-utilisateur/nom-du-projet.git
+cd nom-du-projet
+```
+
+Installer les dépendances et lancer l'application de le serveur :
+
+| Gestionnaire | Installation des dépendances     | Lancement de l'application  | Lancement du serveur
+|--------------|------------------|-------------------|---------------|
+| `npm`        | `npm install`    | `npm run dev`     | `npm run server` |     
+| `pnpm`       | `pnpm install`   | `pnpm dev`        | `pnpm run server` |
+
+L'application sera accessible à l'adresse : http://localhost:3000
