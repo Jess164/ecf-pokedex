@@ -24,7 +24,7 @@ export function HomePage() {
         && pokemon.types.find((type) => { return type.toLowerCase().includes(typeFilter.toLowerCase())})
     })
 
-    return <div>
+    return <div className="mb-10">
         <div className="w-[90%] mx-auto mt-10 mb-4">
             <FilterItems onChangeInputValue={setNameFilter} onSelectOption={setTypeFilter} />
         </div>
