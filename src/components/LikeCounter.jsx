@@ -1,3 +1,7 @@
+/* 
+    Display a like counter that increase when clicked on
+*/
+
 import { Heart } from 'lucide-react';
 import { updatePokemonLikes } from '../api/pokemons/updatePokemonLikes';
 

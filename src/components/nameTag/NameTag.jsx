@@ -1,3 +1,7 @@
+/* 
+    Display a tagname for the types
+*/
+
 import { PKMN_TYPES } from "../../utils/pokemonTypes"
 
 export function NameTag(props) {

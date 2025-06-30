@@ -1,3 +1,7 @@
+/* 
+    Display the list of tagnames
+*/
+
 import { NameTag } from "./NameTag"
 
 export function NameTagList(props) {

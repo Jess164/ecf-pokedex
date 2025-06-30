@@ -1,3 +1,7 @@
+/* 
+    Display the homepage of all pokémons
+*/
+
 import { FilterItems } from "../components/filter/FilterItems"
 import { CardList } from "../components/cards/CardsList"
 import { useState } from "react"

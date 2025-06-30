@@ -1,3 +1,7 @@
+/* 
+    Display a textarea for to add a review
+*/
+
 import { useState, useRef } from 'react'
 import { useParams } from "react-router"
 

@@ -1,3 +1,7 @@
+/* 
+    Display a dropdown to filter Pokémons by type
+*/
+
 import { PKMN_TYPES } from "../../utils/pokemonTypes"
 
 export function SelectType(props) {

@@ -1,3 +1,7 @@
+/* 
+    Display the app logo
+*/
+
 import { Link } from "react-router"
 import { ROUTES } from "../config/routes"
 

@@ -1,3 +1,7 @@
+/* 
+    Display the under header with arrows for change Pokémons
+*/
+
 import { Link } from "react-router";
 import { ROUTES } from "../config/routes"
 import { ArrowBigLeft, ArrowBigRight } from 'lucide-react'

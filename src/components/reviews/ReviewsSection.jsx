@@ -1,3 +1,7 @@
+/* 
+    Display the review section with the title, the textarea and the reviews' list
+*/
+
 import { TextareaContent } from "./TextareaContent"
 import { ReviewsList } from "./ReviewsList"
 

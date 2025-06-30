@@ -1,3 +1,7 @@
+/* 
+    Display the list of progress bars
+*/
+
 import { ProgressBar } from "./ProgressBar";
 
 export function ProgressBarList(props) {

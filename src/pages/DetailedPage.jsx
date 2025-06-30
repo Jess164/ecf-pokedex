@@ -1,3 +1,7 @@
+/* 
+    Display the detailed page of a specific pokémon
+*/
+
 import { useParams } from "react-router"
 import { useEffect, useState } from "react"
 import { getPokemonById } from "../api/pokemons/getPokemonById"

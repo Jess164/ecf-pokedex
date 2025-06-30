@@ -1,3 +1,7 @@
+/* 
+    Display a card of Pokémon
+*/
+
 import { Link } from "react-router"
 import { NameTagList } from "../nameTag/NameTagList"
 import { ROUTES } from "../../config/routes"

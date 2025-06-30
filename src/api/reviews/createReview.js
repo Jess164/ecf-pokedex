@@ -1,3 +1,7 @@
+/* 
+    Create a new review for a specific Pokémon in the API
+*/
+
 export async function createReview(pokemonId, contentReview) {
     try {
         const response = await fetch(`${import.meta.env.VITE_API_REVIEW_URL}`,

@@ -1,3 +1,7 @@
+/* 
+    Display a progress bar for the stats of Pokémons
+*/
+
 import { MAX_STAT } from "../../utils/statLimits"
 
 export function ProgressBar(props) {    

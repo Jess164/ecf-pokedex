@@ -1,3 +1,7 @@
+/* 
+    Update the number of likes for a specific Pokémon using its ID
+*/
+
 export async function updatePokemonLikes(idPokemon, datasLikes) {
     try {
         const response = await fetch(`${import.meta.env.VITE_API_BASE_URL}/${idPokemon}`,

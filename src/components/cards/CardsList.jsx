@@ -1,3 +1,7 @@
+/* 
+    Display the list of all Pokémons cards
+*/
+
 import { Card } from "./Card"
 
 export function CardList(props) {

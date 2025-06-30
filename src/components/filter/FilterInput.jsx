@@ -1,3 +1,7 @@
+/* 
+    Display a search input to filter the Pokémons list
+*/
+
 import { Search } from 'lucide-react';
 
 export function FilterInput(props) {

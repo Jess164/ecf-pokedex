@@ -1,3 +1,7 @@
+/* 
+    Display the 404 page and to return to the homepage
+*/
+
 import { Link } from "react-router"
 import { House } from 'lucide-react';
 import { ROUTES } from "../config/routes"

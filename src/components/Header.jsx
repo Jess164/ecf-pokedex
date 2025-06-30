@@ -1,3 +1,7 @@
+/* 
+    Display this app logo and redirect to the home page when clicked on
+*/
+
 import { Logo } from "./Logo"
 
 export function Header() {

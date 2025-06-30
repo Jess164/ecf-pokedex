@@ -1,3 +1,8 @@
+/* 
+    Display the whole items of filter
+*/
+
+
 import { FilterInput } from "./FilterInput"
 import { SelectType } from "./SelectType"
 

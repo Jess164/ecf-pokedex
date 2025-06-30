@@ -1,3 +1,7 @@
+/* 
+    Display the list of reviews
+*/
+
 import { ReviewPost } from "./ReviewPost"
 
 export function ReviewsList(props) {
