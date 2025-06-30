@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+body {
+  font-family: 'Lexend Variable', sans-serif;
+}
+
 #title_not_found_page::after {
   clip-path: ellipse(45% 3% at 48% 51%);
   content: '';
@@ -12,8 +16,8 @@
 }
 
 @media only screen and (min-width: 48rem){
-    #title_not_found_page::after {
-        height:26rem;
-        clip-path: ellipse(47.19% 3% at 49.17% 49.56%);
-    }
+  #title_not_found_page::after {
+      height:26rem;
+      clip-path: ellipse(47.19% 3% at 49.17% 49.56%);
+  }
 }

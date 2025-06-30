@@ -11,6 +11,7 @@
     "server": "npx json-server db.json --port 3001"
   },
   "dependencies": {
+    "@fontsource-variable/lexend": "^5.2.9",
     "@tailwindcss/vite": "^4.1.10",
     "lucide-react": "^0.515.0",
     "react": "^19.1.0",
