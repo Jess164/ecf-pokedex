@@ -1,10 +1,10 @@
 // (minimum being 0)
 
 export const MAX_STAT = {
-attack: 130,
-defense: 180,
-specialAttack: 135,
-specialDefense: 120,
-speed: 120,
-hp: 105,
+'Attack': 130,
+'Defense': 180,
+'Special attack': 135,
+'Special defense': 120,
+'Speed': 120,
+'HP': 105,
 };
